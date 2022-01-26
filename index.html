@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="pinjam()">
+        nama buku:
+        <input id="buku" type="text">nama: <input id="nama" type="text">
+        <button type="submit">pinjam</button>
+    </form>
+    <H1 id="hasil"></H1>
+    <script>
+        function pinjam() {
+            const buku = document.getElementById('buku').value;
+            const nama = document.getElementById('nama').value;
+
+            document.getElementById('hasil').innerHTML = buku + ' di pinjam oleh ' + nama;
+            event.preventDefault();
+
+
+        }
+    </script>
+</body>
+
+</html>
